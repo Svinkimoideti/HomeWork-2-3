@@ -20,6 +20,11 @@
   <main>
     {% block content %}
     <h2 class="main__title">Выбери освещение:</h2>
+    <li class="list__item">
+        <a href="{{size + "/0" }}">
+          <img class="item__img" src="../static/img/Light2.png" alt="light">
+          <span>0</span></a>
+    </li>
     <ul class="list" id="list">
       <li class="list__item">
         <a href={{size + "/3" }}>
@@ -36,11 +41,6 @@
         <a href="{{size + "/10" }}">
           <img class="item__img" src="../static/img/light.svg" alt="light">
           <span>8 и более</span></a>
-      </li>
-      <li class="list__item">
-        <a href="{{size + "/0" }}">
-          <img class="item__img" src="../static/img/Light2.png" alt="light">
-          <span>0</span></a>
       </li>
     </ul>
     {% endblock %}
