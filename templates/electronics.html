@@ -20,6 +20,11 @@
   <main>
     {% block content %}
     <h2 class="main__title">Выбери количество электрических приборов:</h2>
+    <li class="list__item">
+        <a href="{{lights + "/0" }}">
+          <img class="item__img" src="../static/img/1679856337_phonoteka-org-p-znak-ekologii-art-vkontakte-5.jpg" alt="battery">
+          <span> 0 приборов</span></a>
+    </li>
     <ul class="list" id="list">
       <!-- Задание №3 -->
       <li class="list__item">
@@ -36,11 +41,6 @@
         <a href="{{lights + "/11" }}">
           <img class="item__img" src="../static/img/battery.svg" alt="battery">
           <span>10 и более</span></a>
-      </li>
-      <li class="list__item">
-        <a href="{{lights + "/1" }}">
-          <img class="item__img" src="../static/img/1679856337_phonoteka-org-p-znak-ekologii-art-vkontakte-5.jpg" alt="battery">
-          <span> 0 приборов</span></a>
       </li>
       <!--  -->
     </ul>
